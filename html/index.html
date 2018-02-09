@@ -5,35 +5,44 @@
     <title>Google Home Page</title>
     <link href="../style/style.css" rel="stylesheet">
   </head>
-<body>
-  <header class="top-navbar">
-    <ul>
-      <li>Gmail</li>
-      <li>Images</li>
-      <li><button id="sign_in">Sign In</button></li>
-    </ul>
-  </header>
-  <div class="main-content">
-      <img style="height: 100px; width: 300px;" src="../images/google-logo.png" alt="Google Logo"></a>
-      <form action="#">
-        <input type="text">
-      </form>    
-    <div class="all-button">
-      <button class="innerb" id="search">Google Search</button>
-      <button class="innerb" id="lucky">I'm Feeling Lucky</button>
+  <body>
+    <header class="top-bar">
+    	<div class="top-left">
+    		<ul>
+    			<li><a href="https://www.google.com/intl/en/about/?fg=1&utm_source=google.com&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+    			<li><a href="https://store.google.com/?utm_source=hp_header&utm_medium=google_oo&utm_campaign=GS100042">Store</a></li>
+    		</ul>
+    	</div>
+    	<div class="top-right">
+    		<ul>
+    			<li><a href="https://mail.google.com/?tab=wm">Gmail</a></li>
+    			<li><a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0">Images</a></li>
+    			<li class="sign-in"><button class="sign-in"><a class="sign-in" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign In</a></button></li>
+    		</ul>
+    </header>
+    <div class="main-content">
+    	<img id="logo" src="../images/google-logo.png" alt="Google Logo">
+    	<div id="search-bar">
+    		<form class="search-form" action="" method="get">
+    			<input class="search-form" type="text">
+    		</form>
+    		<img id="microphone" src="../images/microphone.png" alt="microphone for audio search">
+    	</div>
+    	<button id="search"><b>Google Search</b></button>
+    	<button id="lucky"><b>I'm Feeling Lucky</b></button>
     </div>
-  </div>
-  <div class="bottom-bar">
-    <ul class="l-bottom-bar">
-         <li class="bottom-content">Advertising</li>
-         <li class="bottom-content">Business</li>
-         <li class="bottom-content">About</li>
-    </ul>
-    <ul class="r-bottom-bar">
-         <li class="bottom-content">Privacy</li>
-         <li class="bottom-content">Terms</li>
-         <li class="bottom-content">Settings</li>
-    </ul>
-  </div>
-</body>
+    <footer>
+    	<div class="bottom-left">
+    		<ul>
+    			<li><a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+    			<li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Services</a></li>
+    		</ul>
+    	</div>
+    	<div class="bottom-right">
+    		<ul>
+    			<li><a href="https://www.google.com/intl/en_us/policies/privacy/?fg=1">Policies</a></li>
+    			<li><a href="https://www.google.com/intl/en_us/policies/terms/?fg=1">Terms</a></li>
+    			<li><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+    		</ul>
+  </body>
 </html>
