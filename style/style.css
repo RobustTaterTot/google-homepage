@@ -5,11 +5,35 @@
   list-style: none;
   text-decoration: none;
   font-family: Arial, sans-serif;
+  font-size: small;
+}
+
+a {
   color: #222;
 }
 
-div {
-  display: inline-grid;
+li, ul {
+  display: inline;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+.bottom-left {
+  justify-self: start;
+}
+
+.bottom-right {
+  justify-self: end;
+  padding-right: 50px;
 }
 
 .sign-in {
@@ -23,29 +47,22 @@ div {
   height: 30px;
 }
 
-li:hover {
-  text-decoration: underline;
-}
-
-.top-right {
-  padding: 0 30 0 30;
-}
-
-.top-bar {
-  width: 100%;
-  align-items: center;
-  font-size: small;
-}
-
 .main-content {
   margin: auto;
-  width: 50%;
+}
+
+.top {
+  padding: 10px 0px 0px 0px;
 }
 
 .search-form {
   border: none;
-  width: 500px;
+  width: 75%;
   height: 25px;
+}
+
+#gmail {
+  margin-left: auto;
 }
 
 #microphone {
@@ -53,11 +70,13 @@ li:hover {
 }
 
 #search-bar {
-
+  display: inline;
 }
 
 #search, #lucky {
   color: rgb(99, 99, 99);
   background-color: rgb(235, 235, 235);
   border: 0;
+  padding: 0.7rem 1.4rem 0.6rem 1.4rem;
+  font-size: 0.8rem;
 }
